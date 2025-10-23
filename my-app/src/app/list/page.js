@@ -18,8 +18,6 @@ export default async function List() {
           >
             <h4>{v.title}</h4>
           </Link>
-          <DetailLink />
-          <p>{v.content}</p>
         </div>
       ))}
     </div>

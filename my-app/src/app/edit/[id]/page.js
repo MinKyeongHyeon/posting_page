@@ -11,13 +11,14 @@ export default async function Edit(props) {
     <div className="p-20">
       <h4>글 수정 페이지</h4>
       <form action="/api/post/edit" method="POST">
+        <input name="_id" defaultValue={result._id.toString()} type="hidden" />
         <input name="title" placeholder="글제목" defaultValue={result.title} />
         <input
           name="content"
           placeholder="글내용"
           defaultValue={result.content}
         />
-        <button type="submit">버튼</button>
+        <button type="submit">수정</button>
       </form>
     </div>
   );

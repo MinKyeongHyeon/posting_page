@@ -25,6 +25,6 @@ export default function ListItem(props) {
           </span>
         </div>
       ))}
-    </div>
+    </div> 
   );
 }
